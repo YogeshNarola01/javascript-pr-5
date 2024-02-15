@@ -1,0 +1,21 @@
+<html>
+<script type="text/javascript">
+    //   6. delete element in arry position wise.
+
+    var arr = [];
+    var n = parseInt(prompt("Enter array size : "));
+
+    for (var i = 0; i < n; i++) {
+        arr[i] = parseInt(prompt("Enter array value : "));
+    }
+
+    var insert = parseInt(prompt("Enter delet index in lassthen array size : "));
+
+    for (var i = insert; i < arr.length; i++) {
+        arr[i] = arr[i + 1];
+    }
+    arr.length = arr.length-1;
+    console.log(arr);
+</script>
+
+</html>

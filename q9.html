@@ -1,0 +1,26 @@
+<html>
+<script type="text/javascript">
+    //9. search array elemet using for loop.
+
+    var arr = [];
+    var n = parseInt(prompt("Enter array size : "));
+
+    for (var i = 0; i < n; i++) {
+        arr[i] = parseInt(prompt("Enter array value : "));
+    }
+
+    var yes=0;
+    var serch = parseInt(prompt("Enter the element and chack in array : "));
+    for(var i = 0; i<n ; i++){
+        if(serch == arr[i]){
+           yes = 1
+        }
+    }
+    if(yes == 1){
+        console.log("Your Number is Found in Array ");
+    }else{
+        console.log("Your Number is Not Found in Array ");
+    }
+    
+</script>
+</html>

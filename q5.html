@@ -1,0 +1,22 @@
+<html>
+<script type="text/javascript">
+    //  5. insert element in array position wise.
+
+    var arr = [];
+    var n = parseInt(prompt("Enter array size : "));
+
+    for (var i = 0; i < n; i++) {
+        arr[i] = parseInt(prompt("Enter array value : "));
+    }
+
+    var insert = parseInt(prompt("Enter insert index in lassthen array size : "));
+    var val = parseInt(prompt("Enter new value : "));
+
+    for (var i = arr.length -1; i >= insert; i--) {
+        arr[i + 1] = arr[i];
+    }
+    arr[insert] = val;
+    console.log(arr);
+</script>
+
+</html>
